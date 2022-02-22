@@ -1,0 +1,38 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>Menu</servlet-name>
+        <servlet-class>fr.igor.main.web.MenuServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Menu</servlet-name>
+        <url-pattern>/menu</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Shop</servlet-name>
+        <servlet-class>fr.igor.main.web.ShopServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Shop</servlet-name>
+        <url-pattern>/shop</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Build your PC</servlet-name>
+        <servlet-class>fr.igor.main.web.BuildYourPCServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Build your PC</servlet-name>
+        <url-pattern>/buildyourpc</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>About</servlet-name>
+        <servlet-class>fr.igor.main.web.AboutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>About</servlet-name>
+        <url-pattern>/about</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PC Builder</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #923fcf;
+            }
+        li {
+        float: left
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 212.4px;
+            text-decoration: none;
+            }
+        li a:hover{
+            background-color: #7332a4;
+        }
+        div.product-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        div.product {
+            color: #FFFFFF;
+            background-color: #2A2A2A;
+            height: 300px;
+            width: 200px;
+            margin: 15px;
+
+            }
+            div.product:hover {
+                transform: scale(0.98);
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                transition: 0.2s all;
+            }
+            div.product img {
+            max-width: 100%;
+            min-width: 100%;
+            display: block;
+            }
+        body {
+            background-color: #333;
+            }
+        span.name{
+            position: relative;
+            top: 5px;
+            float: right;
+            padding: 12px;
+            font-size: 22px;
+            }
+        a.product-link {
+            list-style-type: none;
+            overflow: hidden;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="/menu">Home</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/buildyourpc">Build your PC</a></li>
+    <li><a href="/about">About</a></li>
+</ul>
+<div class="product-group">
+    <a class="product-link" href="/menu">
+        <div class="product GPU_GTX_1660_MSI">
+                <span class="price">299.99&euro;</span>
+                <span class="name">Nvidia GTX 1660 MSI</span>
+                <img class ="img" src="https://asset.msi.com/resize/image/global/product/product_1604894058aba2180faa37acdda3000e511803e4c2.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" alt="" itemprop="image">
+        </div>
+    </a>
+    <a class="product-link" href="/menu">
+        <div class="product GPU_GTX_1660_super_MSI">
+                <span class="price">399.99&euro;</span>
+                <span class="name">Nvidia GTX 1660 super MSI</span>
+                <img class ="img" src="https://asset.msi.com/resize/image/global/product/product_4_20191016165654_5da6db5683982.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" alt="" itemprop="image">
+        </div>
+    </a>
+</div>
+</body>
+</html>
